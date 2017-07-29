@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run(){
                 try {
-                    ParticleCloudSDK.getCloud().logIn("emailID", "password");
+                    ParticleCloudSDK.getCloud().logIn("emailID", "password"); //Add account details here.....
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
@@ -46,10 +46,10 @@ public class MainActivity extends AppCompatActivity {
                         }
                     });
 
-                    myDevice = ParticleCloudSDK.getCloud().getDevice("access token");
+                    myDevice = ParticleCloudSDK.getCloud().getDevice("access token"); //Add access token here.....
                     final String nameString = myDevice.getName();
-                    if(ParticleCloudSDK.getCloud().getDevice("access token").isConnected()){
-                    while(ParticleCloudSDK.getCloud().getDevice("access token").isConnected()){
+                    if(ParticleCloudSDK.getCloud().getDevice("access token").isConnected()){   //Add access token here.....
+                    while(ParticleCloudSDK.getCloud().getDevice("access token").isConnected()){   //Add access token here.....  
 
                         runOnUiThread(new Runnable() {
                         @Override
