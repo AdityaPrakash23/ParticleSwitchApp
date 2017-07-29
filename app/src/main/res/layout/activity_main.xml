@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.a09gmail.a23.adityaprakash.particlebutton.MainActivity">
+
+    <TextView
+        android:id="@+id/tex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="casual"
+        android:text="POWER BUTTON!!!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textColor="@color/colorPrimaryDark" />
+
+    <ToggleButton
+        android:id="@+id/tb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Power Button!"
+        android:textOff="Power OFF!"
+        android:textOn="Power ON!"
+        android:layout_below="@+id/tex"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:scaleType="fitCenter" />
+
+
+</RelativeLayout>
